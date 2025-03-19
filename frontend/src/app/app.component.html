@@ -1,0 +1,35 @@
+
+  <main class="container">
+    <mat-card style="width: 35%; margin: auto; margin-top: 50px; margin-bottom: 50px;">
+      <mat-card-header>
+        <mat-card-title>Shorten a long URL:</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div>
+          <input matInput type="url" placeholder="Enter URL to shorten..." #urlInputShorten />
+          &nbsp;
+          <button mat-raised-button color="primary" (click)="onSubmitShorten()">Shorten</button>
+        </div>
+        <div>
+          <p *ngIf="shortenErrorMessage">{{ shortenErrorMessage }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    
+    <mat-card style="width: 35%; margin: auto; margin-top: 50px; margin-bottom: 50px;">
+      <mat-card-header>
+        <mat-card-title>Expand a short URL:</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div>
+          <input matInput type="text" maxlength="6" placeholder="Enter URL to expand..." #urlInputExpand />
+          &nbsp;
+          <button mat-raised-button color="primary" (click)="onSubmitExpand()">Expand</button>
+        </div>
+        <div>
+          <p *ngIf="expandErrorMessage">{{ expandErrorMessage }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </main>
+
