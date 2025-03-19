@@ -8,11 +8,11 @@ This is a URL shortening tool built with an Angular frontend and a Python backen
 
 ### Frontend (Angular)
 
-For setup instructions, please refer to our [Angular README](https://github.com/naterchrdsn/url-shortener/blob/main/backend/README.md).
+For setup instructions, please refer to our [Angular README](https://github.com/naterchrdsn/url-shortener/blob/main/frontend/README.md).
 
 ### Backend (Python)
 
-For setup instructions, please refer to our [Python README](https://github.com/naterchrdsn/url-shortener/blob/main/frontend/README.md).
+For setup instructions, please refer to our [Python README](https://github.com/naterchrdsn/url-shortener/blob/main/backend/README.md).
 
 ## Starting the Application
 
