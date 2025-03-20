@@ -1,9 +1,8 @@
-from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from backend.app.config.database import get_db, URLModel
 from backend.app.services.url_service import URLService
 from backend.app.config.settings import settings
-from fastapi.responses import RedirectResponse
 
 router = APIRouter(tags=["urls"])
 
